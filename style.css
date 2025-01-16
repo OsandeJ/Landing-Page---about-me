@@ -6,14 +6,7 @@
 body{
     font-family: 'Nunito', sans-serif;
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    position: relative; /* Garante que o menu fique no topo */
-    z-index: 10; /* Sobrepõe o banner */
-    background-color: #25272C /* Fundo para evitar sobreposição */
-}
+
 div.banner-img {
     background-image:url(bck-img/53607.jpg); 
     background-size: cover;
@@ -28,54 +21,106 @@ div.banner-img {
     z-index: 0;
 }
 
-header div.wtts-btn a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-header div.wtts-btn a:hover{
-    color: #25d366;
-}
-header div.menu-logo{
-    display: flex;
-    align-items: center;
-}
-header div.menu-logo a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    transition: color 0.3s; /* Adiciona efeito de transição */
-}
-header div.menu-logo a:hover{
-    color: #c6a76e; /* Altera a cor ao passar o mouse */
-}
-
-div.menu-nav nav{
-    display: flex;
+/* Estilo para o cabeçalho */
+header {
     justify-content: space-between;
+    padding: 20px;
+    position: relative; /* Garante que o menu fique no topo */
+    z-index: 10; /* Sobrepõe o banner */
+    background-color: #25272c; /* Fundo branco */
 }
 
-div.menu-nav nav ul{
+/* Container de navegação */
+.menu-nav {
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
     align-items: center;
+}
+
+/* Estilo para o nav */
+.menu-nav nav {
+    display: flex;
+    justify-content: space-between; /* Espaçamento uniforme */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Largura máxima */
+}
+
+/* Estilo para os menus laterais */
+.menu-nav ul {
     display: flex;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Espaço entre os links */
 }
 
-div.menu-nav nav ul li {
-    margin-right: 30px;
+/* Alinha o menu da direita (inclui botão WhatsApp) */
+.menu-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaço entre os itens da direita */
 }
 
-div.menu-nav nav ul li a{
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 20px;
-        transition: color 0.3s; /* Adiciona efeito de transição */
+/* Estilo para os links */
+.menu-nav ul li a {
+    text-decoration: none;
+    color: white; /* Cor do texto */
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
 }
-div.menu-nav nav ul li a:hover{
-    color: #c6a76e; /* Altera a cor ao passar o mouse */
+ul.menu-left li a {
+    text-decoration: none;
+    color: white; /* Cor do texto */
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s; 
+}
+
+.menu-left li a:hover {
+    color: #96822B;
+}
+ul.menu-right li#left a {
+    text-decoration: none;
+    color: white; /* Cor do texto */
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s; 
+}
+
+.menu-right li#left a:hover {
+    color: #96822B;
+}
+
+/* Estilo para o logo no centro */
+.menu-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-logo a {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff; /* Azul para o logotipo */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espaço entre o ícone e o texto */
+}
+
+/* Estilo para o botão WhatsApp */
+.wtts-btn a {
+    text-decoration: none;
+    background-color: #25d366; /* Verde WhatsApp */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
 }
 
 div.menu-social-media {
@@ -157,7 +202,7 @@ div.about-img img{
     height: 320px;
 }
 div.text-about{
-  font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     color: #ffffff;
     text-align: justify;
     justify-content: center;
@@ -363,12 +408,77 @@ section.about-sec div.about-content {
     color: #8f8f8f;
 }
 .blueBG{
-  border-radius: 20px;
-  z-index: -1;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80vw;
-  height: 300px;
-  background-color: #25272C;
+    border-radius: 20px;
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 300px;
+    background-color: #25272C;
 }
+footer {
+    background-color: #121212;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-logo {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-logo h1 {
+    color: #96822b;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+    margin: 5px 0;
+    color: #aaa;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    min-width: 150px;
+  }
+  
+  .footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #96822b;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+    color: #aaa;
+  }
+  
+  .footer-column ul li a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #ccc06d;
+  }
