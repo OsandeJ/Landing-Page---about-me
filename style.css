@@ -232,6 +232,8 @@ width: 75%;
 max-width: 1200px;
 margin: auto;
 padding-bottom: 50px;
+height: 550px;
+max-height: 550px;
 }
 
 div#sobremim-title {
