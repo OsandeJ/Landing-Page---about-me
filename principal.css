@@ -424,3 +424,114 @@ footer .flex{
 .footer-column ul li a:hover {
     color: #ccc06d;
 }
+
+@media screen and (max-width: 980px){
+    /*Classes Gerais */
+    h2.titulo{
+        font-size: 26px;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .menu-social-media{
+        display: none;
+    }
+    .topo-site .flex{
+        flex-direction: column-reverse;
+    }
+    /* Cabeçalho*/
+    .topo-site .flex{
+        gap: 15px;
+    }
+    nav.menu, .wts-btn{
+        display: none;
+    }
+    /* Topo do Site */
+    section.topo-site{
+        padding: 20px 8%;
+    }
+    .img-topo-site img, .img-sobre img{
+        width: 200px;
+        height: 200px;
+        border: 5px solid #ccc06d; /* Borda de 5px com cor preta */
+    }
+    .img-topo-site h1{
+        font-size: 34px;
+    }
+    /* Especialidades */
+    section.especialidades{
+        padding: 80px 8%;
+    }
+    .especialidades .especialidades-box h3{
+        font-size: 20px;
+        margin: 5px 0;
+    }
+    .especialidades .especialidades-box i{
+        font-size: 30px;
+    }
+    .especialidades .especialidades-box p{
+        font-size: 16px;
+    }
+    /* Sobre */
+    section.sobre{
+        padding: 80px 8%;
+    }
+    section.sobre .flex{
+        gap: 15px;
+        padding: 7px 0;
+    }
+    .img-sobre img{
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        border: 5px solid #ccc06d; /* Borda de 5px com cor preta */
+    }
+    .sobre .txt-sobre{
+        font-size: 16px;
+    }
+    .sobre .txt-sobre p span{
+        font-size: 18px;
+    }
+    .btn-social-media{
+        text-align: center;
+    }
+    /* Projectos */
+    section.projectos{
+        padding: 80px 8%;
+    }
+    .img-proj{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    section.projectos .flex{
+        gap: 50px;
+    }
+    /* Contacto */
+    section.formulario{
+        padding: 80px 8%;
+    }
+    .formulario .contacte-me-box{
+        max-width: 330px;
+        margin-top: 10px;
+    }
+    form{
+        max-width: 330px;
+    }
+    form input, form textarea{
+        padding: 15px 10px;
+    }
+    form textarea{
+        height: 100px;
+    }
+    form .btn-enviar input{
+        width: 100px;
+    }
+    /* Rodapé */
+    footer .flex{
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
