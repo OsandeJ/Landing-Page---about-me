@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="interface">
-            <nav class="menu">
+            <nav class="menu" id="menu-desktop">
                 <div class="menu-left">
                     <ul>
                         <li id="left"><a class="header" href="index.html">Home</a></li>
@@ -36,9 +36,26 @@
                 <div class="wts-btn">
                     <a href="https://contate.me/osandej" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
-
             </nav> <!-- nav menu -->
-
+            <div class="container">
+                  <div class="content">   
+                    <nav role="navigation">
+                      <div id="menuToggle">
+                        <input type="checkbox" />
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      <ul id="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Info</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                     </div>
+                    </nav>
+                  </div>
+              </div>
+            </div>
         </div> <!-- interface -->
     </header> <!-- header --> 
     <main>
@@ -54,7 +71,7 @@
                                 projeto brilhar no mundo digital. Vamos juntos dar vida à sua visão e criar algo
                                 incrível para o seu negócio.</p>
                         </div> <!-- topo-txt -->
-                        <div class="wts-btn contacte-me">
+                        <div class="wts-btn contacte-me" id="header-wts">
                             <a href="https://contate.me/osandej" target="_blank">Entre em Contacto</a>
                         </div> <!-- wts-btn -->
                     </div> <!-- txt-topo-site -->
