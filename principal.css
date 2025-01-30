@@ -88,6 +88,82 @@ header nav ul li {
     box-shadow: 0 0 8px #5ad487;
     transform: scale(1.07);
 }
+/* Estilo Menu mobile */
+.menu-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.menu-mobile-btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.menu-mobile-btn span {
+    background: white;
+    height: 2px;
+    width: 40px; /* Aumente o width */
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+.menu-mobile-list {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 65%;
+    height: 100%;
+    background: #444;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinhar os itens no topo */
+    align-items: flex-end;
+    padding-top: 80px; /* Adicionar um padding no topo para evitar que os itens fiquem muito próximos do botão */
+}
+
+.menu-mobile-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    width: 100%; /* Garantir que ocupe toda a largura */
+}
+
+.menu-mobile-list ul li {
+    margin: 15px 20px; /* Reduzir a margem entre os itens */
+}
+
+.menu-mobile-list ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.menu-mobile-list.active {
+    right: 0;
+}
+
+.menu-mobile-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 8px); /* Ajuste fino */
+}
+
+.menu-mobile-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-mobile-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -8px); /* Ajuste fino */
+}
+
+@media (min-width: 981px) {
+    .menu-mobile {display: none;
+    }
+}
 /*Estilo Redes Sociais a Direita */
 div.menu-social-media {
     width: 100px;
@@ -123,118 +199,6 @@ div.menu-social-media ul li a#insta-icon:hover {
 div.menu-social-media ul li a#github-icon:hover {
     color: #962fbf;
 }
-/*Estilo do menu mobile*/
-.navigation ul li a{
-    text-decoration: none;
-    color: #1E1E23;
-    opacity:1;
-    font-size: 20px;
-    font-weight: 400;
-    transition: 200ms;
-  }
-.navigation ul li a:hover {
-    opacity:0.5;
-  }
-  .navigation ul{
-    padding: 0px;
-    list-style-type: none;
-  }
-nav.navigation {
-    height: 100vh;
-    position: fixed;
-    z-index: 9999;
-  }
-  
-  #menuToggle {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 25px;
-    z-index: 99;
-    -webkit-user-select: none;
-    user-select: none;
-  }
-  
-  #menuToggle input
-  {
-    display: flex;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 999;
-  }
-  
-  #menuToggle span
-  {
-    display: flex;
-    width: 29px;
-    height: 2px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #ffffff;
-    border-radius: 3px;
-    z-index: 9;
-    transform-origin: 5px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
-  }
-  
-  #menuToggle span:first-child
-  {
-    transform-origin: 0% 0%;
-  }
-  
-  #menuToggle span:nth-last-child(2)
-  {
-    transform-origin: 0% 100%;
-  }
-  
-  #menuToggle input:checked ~ span
-  {
-    opacity: 1;
-    transform: rotate(45deg) translate(-3px, -1px);
-    background: #36383F;
-  }
-  #menuToggle input:checked ~ span:nth-last-child(3)
-  {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-  
-  #menuToggle input:checked ~ span:nth-last-child(2)
-  {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-  
-  #menu
-  {
-    position: absolute;
-    width: 180px;
-    height: 400px;
-    box-shadow: 0 0 10px #85888C;
-    margin: -50px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    background-color: #F5F6FA;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  }
-  
-  #menu li
-  {
-    padding: 10px 0;
-    transition-delay: 2s;
-  }
-  
-  #menuToggle input:checked ~ ul
-  {
-    transform: none;
-  }
 /*Estilo do topo do site*/
 section.topo-site{
     padding: 80px 4%;
@@ -572,8 +536,9 @@ footer .flex{
         height: 200px;
         border: 5px solid #ccc06d; /* Borda de 5px com cor preta */
     }
-    .img-topo-site h1{
-        font-size: 34px;
+    .topo-txt h1{
+        font-size: 24px;
+        text-align: center;
     }
     /* Especialidades */
     section.especialidades{

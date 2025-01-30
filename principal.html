@@ -7,6 +7,7 @@
     <title>Osande de Jesus</title>
     <link rel="stylesheet" href="FontAwesome6Pro-main/css/all.min.css">
     <script src="FontAwesome6Pro-main/js/pro.min.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="principal.css">
 </head>
 
@@ -37,25 +38,26 @@
                     <a href="https://contate.me/osandej" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </nav> <!-- nav menu -->
-            <div class="container">
-                  <div class="content">   
-                    <nav role="navigation">
-                      <div id="menuToggle">
-                        <input type="checkbox" />
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                      <ul id="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Info</a></li>
-                        <li><a href="#">Contact</a></li>
-                      </ul>
-                     </div>
-                    </nav>
-                  </div>
-              </div>
+            <div class="menu-mobile">
+                <div class="menu-logo">
+                    <a class="header" href="#"><i class="fa-solid fa-binary-circle-check"></i> Osande de Jesus</a>
+                </div>
+                <div class="menu-mobile-btn" id="menuToggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
+            <nav class="menu-mobile-list" id="mobileMenu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#">Sobre Mim</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Contacte-me</a></li>
+                </ul>
+            </nav>
+
         </div> <!-- interface -->
     </header> <!-- header --> 
     <main>
