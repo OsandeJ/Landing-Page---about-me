@@ -117,7 +117,7 @@ header nav ul li {
     top: 0;
     width: 65%;
     height: 100%;
-    background: #444;
+    background: rgba(0, 0, 0, 0.634); /* Cor preta com 50% de opacidade */
     transition: right 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -125,6 +125,7 @@ header nav ul li {
     align-items: flex-end;
     padding-top: 80px; /* Adicionar um padding no topo para evitar que os itens fiquem muito próximos do botão */
 }
+
 
 .menu-mobile-list ul {
     list-style: none;
@@ -539,6 +540,28 @@ footer .flex{
     .topo-txt h1{
         font-size: 24px;
         text-align: center;
+    }
+    /* Ajustes no menu mobile */
+    .menu-mobile-list ul {
+        display: flex;
+        flex-direction: column; /* Coloca os itens em uma coluna */
+        padding: 0;
+        margin: 0;
+        text-align: right;
+        width: 100%;
+    }
+
+    .menu-mobile-list ul li {
+        margin: 15px 0; /* Ajuste a margem para separar os itens */
+    }
+
+    .menu-mobile-list ul li a {
+        font-size: 1.5em;
+    }
+
+    /* Outros ajustes na media query */
+    .flex {
+        flex-direction: column;
     }
     /* Especialidades */
     section.especialidades{
