@@ -12,6 +12,7 @@ body, html {
     font-style: normal;
     overflow-x: hidden;
     height: 100vh;
+    padding-top: 10px;
 }
 .interface{
     max-width: 1024px;
@@ -41,8 +42,14 @@ h2.titulo span{
 }
 /*Estilo do cabeçalho*/
 header {
-    padding: 40px 4%;
-    background-color: #25272c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #25272cf4;
+    z-index: 1000; /* Mantém o menu acima de outros elementos */
+    padding: 20px 4%; /* Reduza o padding para evitar um menu muito grande */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona um efeito de sombra para destacar o menu */
 }
 nav.menu {
     display: flex;
