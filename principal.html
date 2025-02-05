@@ -23,7 +23,8 @@
                 </div> <!-- menu-left -->
 
                 <div class="menu-logo">
-                    <a class="header" href="principal.html"><i class="fa-sharp-duotone fa-solid fa-binary-circle-check fa-lg"
+                    <a class="header" href="principal.html"><i
+                            class="fa-sharp-duotone fa-solid fa-binary-circle-check fa-lg"
                             style="--fa-primary-color: #364559; --fa-secondary-color: #000000; --fa-secondary-opacity: 0.8;"></i>
                         Osande de Jesus</a>
                 </div> <!-- menu-logo -->
@@ -59,7 +60,7 @@
             </nav>
 
         </div> <!-- interface -->
-    </header> <!-- header --> 
+    </header> <!-- header -->
     <main>
         <section class="topo-site" id="Home">
             <div class="interface">
@@ -82,18 +83,18 @@
                     </div> <!-- img-topo-site -->
                     <div class="menu-social-media">
                         <ul>
-                          <li><a id="fbk-icon" href="https://www.facebook.com/osande.rodrigues/" target="_blank"><i
-                                class="fab fa-facebook-f"></i></a>
-                          </li>
-                          <br><br>
-                          <li><a id="insta-icon" href="https://www.instagram.com/osande_euu/" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                          </li>
-                          <br><br>
-                          <li><a id="github-icon" href="https://github.com/OsandeJ/" target="_blank"><i
-                                class="fa-brands fa-github"></i></a></li>
+                            <li><a id="fbk-icon" href="https://www.facebook.com/osande.rodrigues/" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <br><br>
+                            <li><a id="insta-icon" href="https://www.instagram.com/osande_euu/" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <br><br>
+                            <li><a id="github-icon" href="https://github.com/OsandeJ/" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a></li>
                         </ul>
-                      </div> <!-- menu-social-media -->
+                    </div> <!-- menu-social-media -->
                 </div><!-- flex -->
             </div><!-- interface -->
         </section> <!-- topo-site -->
@@ -133,8 +134,8 @@
                         <img src="img/OsandeJ.jpg" alt="Osande de Jesus">
                     </div> <!-- img-sobre -->
                     <div class="txt-sobre">
-                        <p>Muito prazer! <span> Sou Osande de Jesus.</span> Nascido aos 10/03/2006, sou estudante
-                            Informática, sou um desenvolvedor web junior, com conhecimentos em HTML, CSS, JavaScript,
+                        <p>Muito prazer! <span> Sou Osande de Jesus.</span> Nascido aos 10/03/2006, sou estudante de
+                            Informática e desenvolvedor web junior, com conhecimentos em HTML, CSS, JavaScript,
                             Bootstrap, ReactJS, NodeJS, Git, GitHub, entre outras tecnologias. Sou apaixonado por
                             tecnologia e programação, e estou sempre a aprender novas tecnologias e a melhorar as minhas
                             habilidades.</p>
@@ -145,9 +146,9 @@
                             <a href="https://www.facebook.com/osande.rodrigues/" target="_blank"><button><i
                                         class="fa-brands fa-facebook"></i></button></a>
                             <a href="https://www.instagram.com/osande_euu/" target="_blank"><button><i
-                                        class="fa-brands fa-instagram"></i></button> </a>
+                                        class="fa-brands fa-instagram"></i></button></a>
                             <a id="github-icon" href="https://github.com/OsandeJ/" target="_blank"><button><i
-                                        class="fa-brands fa-github"></i></button> </a>
+                                        class="fa-brands fa-github"></i></button></a>
                         </div> <!-- wts-btn -->
                     </div> <!-- txt-sobre -->
                 </div> <!-- flex -->
@@ -174,18 +175,24 @@
         </section> <!-- projectos -->
         <section class="formulario" id="Contacta-me">
             <div class="interface">
-                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+                <h2 class="titulo">FALA <span>COMIGO</span></h2>
                 <div class="contacte-me-box">
-                    <form action="">
-                        <input type="text" name="" id="" placeholder="Seu nome" required>
-                        <input type="email" name="" id="" placeholder="Seu email" required>
-                        <input type="text" name="" id="" placeholder="Seu nº de telefone">
-                        <textarea name="" id="" placeholder="Assunto" required></textarea>
+                    <form id="contact-form">
+                        <input type="text" name="nome" placeholder="Seu nome" required>
+                        <input type="email" name="email" placeholder="Seu email" required>
+                        <input type="text" name="telefone" placeholder="Seu nº de telefone">
+                        <textarea name="mensagem" placeholder="Assunto" required></textarea>
                         <div class="btn-enviar">
-                            <input type="submit"></button>
+                            <input type="submit" value="Enviar">
                         </div> <!-- btn-enviar -->
-                    </form> <!-- form -->
-                </div> <!-- contacte-me-box -->        
+                        <!-- Modal Popup -->
+                        <div id="successModal" class="modal">
+                            <div class="modal-content">
+                                <p>Email enviado com sucesso! </p>
+                            </div>
+                        </div>
+                    </form> <!-- contact-form -->
+                </div> <!-- contacte-me-box -->
             </div> <!-- interface -->
         </section> <!-- formulario -->
     </main> <!-- main -->
@@ -195,31 +202,32 @@
                 <div class="footer-logo">
                     <h1>Osande de Jesus</h1>
                     <p><i class="fa-solid fa-bracket-curly"></i> Desenvolvedor Web Junior <i
-                        class="fa-solid fa-bracket-curly-right"></i></p>
+                            class="fa-solid fa-bracket-curly-right"></i></p>
                     <p>&copy; 2025 - Todos os direitos reservados.</p>
-                    
-                  </div> <!-- footer-logo -->
-                  <div class="footer-links">
+
+                </div> <!-- footer-logo -->
+                <div class="footer-links">
                     <div class="footer-column">
                         <h4>Contacte-me</h4>
                         <ul>
-                          <li><a href="https://contate.me/osandej">WhatsApp</a></li>
-                          <li>Telemovel (+244):<br>922728954 / 958844760</li>
-                          <li>Email: <a href="mailto:osande.lc17@gmail.com">osande.lc17@gmail.com</a></li>
+                            <li><a href="https://contate.me/osandej">WhatsApp</a></li>
+                            <li>Telemovel (+244):<br>922728954 / 958844760</li>
+                            <li>Email: <a href="mailto:osande.lc17@gmail.com">osande.lc17@gmail.com</a></li>
                         </ul>
-                      </div> <!-- footer-column -->
-                      <div class="footer-column">
+                    </div> <!-- footer-column -->
+                    <div class="footer-column">
                         <h4>Redes Sociais</h4>
                         <ul>
-                          <li><a href="https://www.instagram.com/osande_euu/">Instagram</a></li>
-                          <li><a href="https://github.com/OsandeJ/">GitHub</a></li>
-                          <li><a href="https://www.facebook.com/osande.rodrigues/">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/osande_euu/">Instagram</a></li>
+                            <li><a href="https://github.com/OsandeJ/">GitHub</a></li>
+                            <li><a href="https://www.facebook.com/osande.rodrigues/">Facebook</a></li>
                         </ul>
-                      </div> <!-- footer-column -->
-                  </div> <!-- footer-links -->            
+                    </div> <!-- footer-column -->
+                </div> <!-- footer-links -->
             </div> <!-- flex -->
         </div> <!-- interface -->
     </footer> <!-- footer -->
+    <script src="script.js"></script>
 </body>
 
 </html>

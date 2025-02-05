@@ -209,7 +209,8 @@ div.menu-social-media ul li a#github-icon:hover {
 }
 /*Estilo do topo do site*/
 section.topo-site{
-    padding: 80px 4%;
+    margin-top: 50px;
+    padding: 50px 4%;
 }
 .wts-btn.contacte-me {
     margin-top: 10px; /* Adiciona espaço entre o texto e o botão */
@@ -446,6 +447,42 @@ form .btn-enviar input:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 8px #CCC06D;
 }
+/* Estilos para o Modal */
+/* Estilos para o Modal */
+.modal {
+    display: block; /* Exibido no HTML inicialmente */
+    position: fixed;
+    bottom: 10%; /* Fica um pouco acima da parte inferior da tela */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.753);
+    color: #48ff51;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.325);
+    z-index: 1000;
+    width: 300px;
+    text-align: center;
+  
+    /* Começar invisível */
+    opacity: 0;
+    visibility: hidden;
+  
+    /* Transição suave */
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+  }
+  
+  .modal.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+  }
+  
+  .modal-content {
+    padding: 10px;
+  }
+  
 /*Estilo do Rodapé*/
 footer{
     background-color: #1a1b1f;
@@ -537,7 +574,7 @@ footer .flex{
     }
     /* Topo do Site */
     section.topo-site{
-        padding: 20px 8%;
+        padding: 60px 8%;
     }
     .img-topo-site img, .img-sobre img{
         width: 200px;
